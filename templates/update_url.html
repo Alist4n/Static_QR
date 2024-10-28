@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update QR Code URL</title>
+
+</head>
+<body>
+    <div>
+        <h1>Обновить URL QR-кода</h1>
+        <form action="/update-url" method="POST">
+            <div class="form-group">
+                <label for="url">Новый URL:</label>
+                <input type="text" id="url" name="url" required>
+                <button type="submit">Обновить URL</button>
+            </div>
+            <div>
+                <h2>Текущий URL QR-кода:</h2>
+            </div>
+            <div>
+            <a href={{current_url}}>{{current_url}}</a>
+            </div>
+        <img src="/static/qrcode.png" alt="QR-CODE">
+        </form>
+    </div>
+</body>
+</html>
